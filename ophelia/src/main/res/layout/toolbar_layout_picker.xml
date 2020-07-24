@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/appbar_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/PickerTheme.AppBarOverlay">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ea_picker_toolbar_height"
+        android:background="@color/ea_picker_toolbar_background_color"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        app:popupTheme="@style/PickerTheme.PopupOverlay">
+
+        <LinearLayout
+            android:id="@+id/toolbar_layout_detail_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/iv_toolbar_back"
+                style="@style/rippleClickable"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/ic_arrow_back_white_24dp"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/ea_picker_cancel_text"
+                android:textColor="@color/ea_picker_toolbar_text_color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_picker_count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/ea_picker_zero"
+                android:textColor="@color/ea_picker_toolbar_text_color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_picker_done"
+                style="@style/rippleClickable"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="end|center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/ok"
+                android:textColor="@color/ea_picker_toolbar_text_color"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+</android.support.design.widget.AppBarLayout>

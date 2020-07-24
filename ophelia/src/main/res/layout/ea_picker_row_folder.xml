@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:minHeight="30dp"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/ly_row_folder_first"
+        style="@style/rippleClickable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:layout_weight="1">
+
+        <com.kartega.ophelia.ea_utilities.views.SquareImageView
+            android:id="@+id/iv_folder_first"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@color/ea_picker_image_background_color"
+            android:contentDescription="@string/ea_picker_folder"
+            android:src="@drawable/ic_folder_24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/ea_picker_bottom_name_background_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp">
+
+            <TextView
+                android:id="@+id/tv_folder_name_first"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/app_name"
+                android:textColor="@color/ea_picker_bottom_name_text_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_folder_count_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ea_picker_zero"
+                android:textColor="@color/ea_picker_bottom_name_text_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/ly_row_folder_second"
+        style="@style/rippleClickable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:layout_weight="1">
+
+        <com.kartega.ophelia.ea_utilities.views.SquareImageView
+            android:id="@+id/iv_folder_second"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@color/ea_picker_image_background_color"
+            android:contentDescription="@string/ea_picker_folder"
+            android:src="@drawable/ic_folder_24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/ea_picker_bottom_name_background_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp">
+
+            <TextView
+                android:id="@+id/tv_folder_name_second"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/app_name"
+                android:textColor="@color/ea_picker_bottom_name_text_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_folder_count_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ea_picker_zero"
+                android:textColor="@color/ea_picker_bottom_name_text_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

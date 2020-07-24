@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ea_file_picker.EAPickerActivity">
+
+    <include layout="@layout/toolbar_layout_picker" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/ea_picker_toolbar_height"
+        android:background="#339C9C9C"
+        android:orientation="vertical">
+
+        <com.kartega.ophelia.ea_recycler.EARecyclerView
+            android:id="@+id/recycler_picker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_camera"
+            app:fabSize="normal"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_photo_camera"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

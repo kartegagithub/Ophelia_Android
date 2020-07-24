@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:minHeight="30dp"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/ly_row_image_first"
+        style="@style/rippleClickable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:layout_weight="1">
+
+        <com.kartega.ophelia.ea_utilities.views.SquareImageView
+            android:id="@+id/iv_image_first"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@color/ea_picker_image_background_color"
+            android:contentDescription="@string/ea_picker_folder"
+            android:src="@drawable/ic_folder_24dp" />
+
+        <View
+            android:id="@+id/bg_cover_check_box_first"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/ea_picker_item_selected_color"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/cb_image_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:layout_margin="4dp"
+            android:checked="false"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:theme="@style/EAPickerCheckBox" />
+
+        <TextView
+            android:id="@+id/tv_image_duration_first"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/ea_picker_bottom_name_background_color"
+            android:gravity="center_vertical|end"
+            android:orientation="horizontal"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp"
+            android:text="@string/app_name"
+            android:textColor="@color/ea_picker_bottom_name_text_color"
+            android:textSize="12sp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/ly_row_image_second"
+        style="@style/rippleClickable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:layout_weight="1">
+
+        <com.kartega.ophelia.ea_utilities.views.SquareImageView
+            android:id="@+id/iv_image_second"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@color/ea_picker_image_background_color"
+            android:contentDescription="@string/ea_picker_folder"
+            android:src="@drawable/ic_folder_24dp" />
+
+        <View
+            android:id="@+id/bg_cover_check_box_second"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/ea_picker_item_selected_color"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/cb_image_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:layout_margin="4dp"
+            android:checked="false"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:theme="@style/EAPickerCheckBox" />
+
+
+        <TextView
+            android:id="@+id/tv_image_duration_second"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/ea_picker_bottom_name_background_color"
+            android:gravity="center_vertical|end"
+            android:orientation="horizontal"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp"
+            android:text="@string/app_name"
+            android:textColor="@color/ea_picker_bottom_name_text_color"
+            android:textSize="12sp" />
+
+
+    </FrameLayout>
+
+</LinearLayout>

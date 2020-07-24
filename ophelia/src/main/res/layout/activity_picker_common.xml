@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_layout_picker" />
+
+    <com.kartega.ophelia.ea_recycler.EARecyclerView
+        android:id="@+id/recycler_picker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/ea_picker_toolbar_height"
+        android:background="#339C9C9C" />
+
+</android.support.design.widget.CoordinatorLayout>

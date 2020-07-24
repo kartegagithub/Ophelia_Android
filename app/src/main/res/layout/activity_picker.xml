@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".PickerActivity">
+
+    <Button
+        android:id="@+id/btn_pick_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick Image" />
+
+    <Button
+        android:id="@+id/btn_pick_image_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick Image From Camera" />
+
+    <Button
+        android:id="@+id/btn_pick_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick File" />
+
+
+    <Button
+        android:id="@+id/btn_pick_audio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick Audio" />
+
+
+    <Button
+        android:id="@+id/btn_pick_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick Video" />
+
+    <TextView
+        android:id="@+id/tv_selections"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content" />
+</LinearLayout>

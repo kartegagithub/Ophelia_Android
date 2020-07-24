@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kartega.ophelia">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application>
+        <activity
+            android:name="com.kartega.ophelia.ea_file_picker.EAPickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PickerTheme.NoActionBar" />
+        <activity
+            android:name="com.kartega.ophelia.ea_file_picker.EAPickerImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PickerTheme.NoActionBar" />
+        <activity
+            android:name="com.kartega.ophelia.ea_file_picker.EAPickerAudioActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PickerTheme.NoActionBar" />
+        <activity
+            android:name="com.kartega.ophelia.ea_file_picker.EAPickerVideoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PickerTheme.NoActionBar" />
+        <activity
+            android:name="com.kartega.ophelia.ea_file_picker.EAPickerFileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PickerTheme.NoActionBar" />
+    </application>
+
+</manifest>

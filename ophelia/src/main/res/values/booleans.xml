@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="disable_log">false</bool>
+    <bool name="disable_log_in_release_mode">false</bool>
+    <bool name="allow_only_critical_error_log_in_release_mode">false</bool>
+    <bool name="allow_only_error_log_in_release_mode">true</bool>
+    <bool name="use_log_separator">true</bool>
+    <bool name="disable_arrow_for_spinner">false</bool>
+</resources>
